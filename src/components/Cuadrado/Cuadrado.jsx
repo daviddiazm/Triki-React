@@ -9,8 +9,6 @@ const changeOption = () => {
   setOption(turnoDeJugador.turnoDeJugador)
 }
 
-console.log(turnoDeJugador.turnoDeJugador);
-
   return (
     <div className='cuadrado' onClick={changeOption}>
       <div className='fondo'></div>
