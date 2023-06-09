@@ -1,0 +1,26 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tablero {
+  color: black;
+  width: 80%;
+  height: 70%;
+  background-color: aliceblue;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 6px;
+}
+
+.tablero p {
+  /* width: 10px; */
+  overflow: hidden;
+  margin: 0%;
+  background-color: beige;
+}
