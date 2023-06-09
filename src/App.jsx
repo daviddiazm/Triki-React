@@ -5,15 +5,16 @@ import Cuadrado from './components/Cuadrado/Cuadrado'
 function App() {
   const [count, setCount] = useState(0)
   const [isSelected, setIsSelected] = useState(null)
-  const [turno, setTurno] = useState(true)
+  const [turno, setTurno] = useState("")
 
   const turnoDeJugador = () => {
-    if (turno == true) {
-      return "X"
-    } else {
-      return "O"
-    }
+    if(turno == false) return "X"
+    if(turno == true) return "O"
   }
+
+
+  // console.log(turno);
+  // console.log(turnoDeJugador());
 
   return (
     <div className='app'>
@@ -25,12 +26,12 @@ function App() {
         <Cuadrado turnoDeJugador={turnoDeJugador()}/>
         <Cuadrado turnoDeJugador={turnoDeJugador()}/>
         <Cuadrado turnoDeJugador={turnoDeJugador()}/>
-        {/* <Cuadrado />
-        <Cuadrado />
-        <Cuadrado /> */}
+        <Cuadrado turnoDeJugador={turnoDeJugador()}/>
+        <Cuadrado turnoDeJugador={turnoDeJugador()}/>
+        <Cuadrado turnoDeJugador={turnoDeJugador()}/>
+        {/* <p>praesentium.</p>
         <p>praesentium.</p>
-        <p>praesentium.</p>
-        <p>praesentium.</p>
+        <p>praesentium.</p> */}
       </div>
       RESTART
     </div>

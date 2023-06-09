@@ -1,19 +1,21 @@
 import React, { useState } from 'react'
 import './Cuadrado.css'
 
-const Cuadrado = ({turnoDeJugador}) => {
+const Cuadrado = (turnoDeJugador) => {
 
-  // const [opction, setOpction] = useState("")
+const [option, setOption] = useState("")
 
-  console.log(turnoDeJugador);
+const changeOption = () => {
+  setOption(turnoDeJugador.turnoDeJugador)
+}
 
-  const elTurno = turnoDeJugador
+console.log(turnoDeJugador.turnoDeJugador);
 
   return (
-    <div className='cuadrado'>
+    <div className='cuadrado' onClick={changeOption}>
       <div className='fondo'></div>
       <div className='fondo2'></div>
-      <h2 className='texto' >{elTurno}</h2>
+      <h2 className='texto' >{option}</h2>
     </div>
   )
 }
