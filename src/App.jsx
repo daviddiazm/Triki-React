@@ -12,7 +12,7 @@ function App() {
     if(turno == true) return "O"
   }
 
-
+//HOLA ESTAS EN LA RAMA DAVID
   // console.log(turno);
   // console.log(turnoDeJugador());
 
