@@ -12,7 +12,7 @@ function App() {
     if(turno == true) return "O"
   }
 
-
+//ESTAS EN LA MIDUBRANCH
   // console.log(turno);
   // console.log(turnoDeJugador());
 
